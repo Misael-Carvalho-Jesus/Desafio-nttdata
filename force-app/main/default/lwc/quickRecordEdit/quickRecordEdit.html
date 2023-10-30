@@ -1,0 +1,23 @@
+<template>
+    <lightning-card  title="Edit Account Fields">
+        <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name="Account"
+            class="slds-p-horizontal_medium"
+        >
+            <lightning-input-field field-name="AccountNumber"> </lightning-input-field>
+            <lightning-input-field field-name="Name"> </lightning-input-field>
+            <lightning-input-field field-name="Type"> </lightning-input-field>
+            <div class="slds-text-align_center">
+                <lightning-button
+                    class="slds-m-top_small"
+                    variant="brand"
+                    type="submit"
+                    name="update"
+                    label="Update"
+                >
+                </lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
